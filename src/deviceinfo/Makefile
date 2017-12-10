@@ -8,7 +8,7 @@ install:
 	if [ ! -d "/usr/lib/vega/deviceinfo/static/js" ]; then mkdir -p /usr/lib/vega/deviceinfo/static/js; fi
 	cp ./main /usr/lib/vega/deviceinfo/deviceinfo
 	cp ./conf/app.conf /usr/lib/vega/deviceinfo/conf/
-	cp ./static/js/reload.min.js /usr/lib/vega/deviceifo/static/js/
+	cp ./static/js/reload.min.js /usr/lib/vega/deviceinfo/static/js/
 	cp ./views/index.tpl /usr/lib/vega/deviceinfo/views/
 	cp ./sn.sh /usr/lib/vega/deviceinfo/
 	if [ ! -d "/etc/systemd/system/multi-user.target.wants/" ]; then mkdir -p /etc/systemd/system/multi-user.target.wants; fi
