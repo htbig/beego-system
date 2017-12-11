@@ -1,0 +1,12 @@
+[Unit]
+Description=Get system info server,eg sn number
+
+[Service]
+WorkingDirectory = /usr/lib/vega/deviceinfo
+ExecStart=/usr/lib/vega/deviceinfo/deviceinfo
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
