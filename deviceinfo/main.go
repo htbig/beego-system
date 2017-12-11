@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+    beego.SetStaticPath("/swagger", "swagger")
 	beego.Run()
 }
 
